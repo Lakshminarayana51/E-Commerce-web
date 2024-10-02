@@ -1,0 +1,75 @@
+/* General styles */
+body {
+  display: flex;
+  flex-direction: row;
+  flex-direction: column; /* Ensure body content is laid out in a column */
+  background-color: rgb(102, 33, 116);
+  font-size: 20px;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* Header styling */
+.text {
+  color: rgb(253, 250, 253);
+  text-align: center;
+  font-size: 2em;
+  background: rgba(66, 25, 64, 0.5);
+  padding: 20px; /* Add some padding for better spacing */
+  margin-bottom: 20px; /* Space below the header */
+}
+
+/* Container for the product list */
+.titles {
+  color: rgb(250, 247, 248);
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap onto new lines */
+  gap: 20px; /* Space between items */
+  justify-content: center; /* Center items horizontally */
+  padding: 20px; /* Add padding inside the container */
+}
+
+/* Styling for each product item */
+.titles>div {
+  display: flex;
+  flex-direction: column ;
+  align-items: center; /* Center align text and image */
+  background-color: rgb(158, 18, 100);
+  border-radius: 15px; /* Rounded corners */
+  width: 200px; /* Fixed width for items */
+padding: 8px;
+}
+.titles img {
+  max-width: 100%; /* Ensure images are responsive */
+  border-radius: 20px; /* Rounded corners for images */
+}
+
+/* Additional styling for the image wrapper */
+.image-wrap {
+  margin-top: 5px; /* Space between title and image */
+}
+.butt{
+  font-size: 18px;
+  background-color: rgb(61, 2, 56);
+  border-radius: 30px;
+  padding: 4px 10px;
+
+}
+/* Container for the search bar */
+.search {
+  text-align: center;
+  margin: 20px 0; /* Margin to add space around the search bar */
+}
+
+/* Styling for the search input field */
+.search-input {
+  width: 100%;
+  max-width: 1100px; /* Maximum width of the search input */
+  padding: 10px 15px; /* Padding for better touch area and spacing */
+  font-size: 16px; /* Font size for the input text */
+  border: 2px solid #ccc; /* Border color and thickness */
+  border-radius: 20px; /* Rounded corners for the input field */
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for better appearance */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for focus state */
+}
